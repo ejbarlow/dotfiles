@@ -7,5 +7,8 @@ require "user.telescope"
 require "user.treesitter"
 require "user.autopairs"
 require "user.nnn"
+require "user.autocommands"
+require "user.comment"
+require "user.toggleterm"
 
 vim.cmd "colorscheme dracula"

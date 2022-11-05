@@ -28,3 +28,8 @@ keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require
 keymap("n", "<C-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 keymap("n", "<C-p>", "<cmd>NnnExplorer<cr>", opts)
+
+keymap("n", "gdh", "<cmd>diffget //2<cr>", opts)
+keymap("n", "gdl", "<cmd>diffget //3<cr>", opts)
+
+keymap("n", "<leader>m", "<cmd>make<cr>", opts)

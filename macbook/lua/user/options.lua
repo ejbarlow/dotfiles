@@ -16,7 +16,7 @@ local options = {
 	splitbelow = true,
 	splitright = true,
   termguicolors = true,
-	timeoutlen = 200,
+	timeoutlen = 1000,
 	undofile = true,
 	updatetime = 300,
 	expandtab = true,
@@ -27,6 +27,8 @@ local options = {
 	scrolloff = 8,
 	sidescrolloff = 8,
   inccommand = "split",
+  foldmethod = "expr",
+  foldexpr = "nvim_treesitter#foldexpr()",
 }
 
 for k, v in pairs(options) do

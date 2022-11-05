@@ -1,5 +1,17 @@
 local builtin = require("nnn").builtin
 require("nnn").setup({
+  auto_open = {
+    setup = "picker",
+    empty = true,
+  },
+  auto_close = true,
+  explorer = {
+    cmd = "nnn -H",
+    width = 30,
+  },
+  picker = {
+    cmd = "nnn -H -d",
+  },
   mappings = {
     { "<C-t>", builtin.open_in_tab },       -- open file(s) in tab
     { "<C-s>", builtin.open_in_split },     -- open file(s) in split

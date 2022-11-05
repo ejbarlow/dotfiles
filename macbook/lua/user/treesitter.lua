@@ -18,4 +18,14 @@ configs.setup {
     -- colors = {}, -- table of hex strings
     -- termcolors = {} -- table of colour name strings
   },
+  content_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  }
 }
+
+local unfold = vim.api.nvim_create_augroup("Unfold", {})
+vim.api.nvim_create_autocmd({"BufWinEnter"}, {
+  command = "normal zR",
+  group = unfold,
+})
